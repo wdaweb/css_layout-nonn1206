@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        body {
+
+            background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.5)100%);
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+        .box {
+            width: 200px;
+            height: 350px;
+            border: 2px solid transparent;
+            /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.3)); */
+            background: linear-gradient(to right, rgb(226, 225, 225) 0%, white 10%, white 90%, rgb(226, 226, 226) 100%);
+            /* background: linear-gradient(to right, gray 0%, white 40%, white 90%, gray 100%)); */
+            box-shadow: 0 0 10px rgba(0, 0, 3, 0.3);
+            float: left;
+
+            position: relative;
+            -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+
+            /* top: 50%;
+            left: 50%; */
+
+
+
+
+
+
+        }
+
+        .p1 {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background: url("https://picsum.photos/100/100/?random=1");
+            position: absolute;
+            left: 50px;
+
+            top: 50px;
+            align-items: center;
+            animation: p 0.5s infinite ease-in alternate forwards;
+
+
+
+
+
+        }
+
+        @keyframes p {
+            from {
+                transform: translateY(0);
+
+            }
+
+            to {
+                transform: translateY(20px);
+            }
+        }
+
+
+
+
+        .p2 {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background: url("https://picsum.photos/100/100/?random=2");
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            animation: p 0.5s infinite ease-in alternate forwards;
+
+
+        }
+
+        .p3 {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background: url("https://picsum.photos/100/100/?random=3");
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            animation: p 0.5s infinite ease-in alternate forwards;
+
+
+        }
+
+        .p4 {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background: url("https://picsum.photos/100/100/?random=4");
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            animation: p 0.5s infinite ease-in alternate forwards;
+
+
+        }
+
+        .h1 {
+
+            display: inline-block;
+            font-size: 5px;
+            color: brown;
+            position: absolute;
+            left: 5px;
+            right: 5px;
+            bottom: 80px;
+            animation: ani1 1s 1s infinite linear alternate forwards;
+
+        }
+
+        @keyframes ani1 {
+            from {
+                transform: translateX(0);
+
+            }
+
+            to {
+                transform: translateX(20px);
+            }
+        }
+
+        .h2 {
+
+            display: inline-block;
+            font-size: 5px;
+
+            position: absolute;
+            left: 5px;
+            right: 5px;
+            bottom: 80px;
+            animation: ani2 1s 1s infinite linear alternate-reverse forwards;
+
+        }
+
+        @keyframes ani2 {
+            from {
+
+
+                transform: skew(45deg, 15deg);
+
+            }
+
+
+
+            to {
+
+
+                transform: skew(45deg, 25deg);
+                ;
+
+
+            }
+        }
+
+
+        .h3 {
+
+            display: inline-block;
+            font-size: 5px;
+
+            position: absolute;
+            left: 5px;
+            bottom: 80px;
+            right: 5px;
+            animation: ani3 1s 1s ease-in-out infinite alternate forwards;
+        }
+
+        @keyframes ani3 {
+            from {
+                color: brown;
+            }
+
+
+
+            to {
+                color: transparent;
+            }
+        }
+
+
+        .h4 {
+
+            display: inline-block;
+            font-size: 5px;
+
+            position: absolute;
+            left: 5px;
+            bottom: 80px;
+            right: 5px;
+            animation: ani4 3s infinite, ani5 2s infinite;
+        }
+
+        @keyframes ani4 {
+            0% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                text-shadow: none;
+            }
+
+            100% {
+                -webkit-transform: translateY(-50px);
+                transform: translateY(-50px);
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        @keyframes ani5 {
+            0% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                text-shadow: none;
+            }
+
+            100% {
+                -webkit-transform: translateY(-50px);
+                transform: translateY(-50px);
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="p1"></div>
+        <div class="h1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sapiente error. Itaque
+            voluptatum dolorum quasi, ex possimus, quo, ratione accusamus numquam quis quidem est temporibus. Eaque
+            inventore dolorum qui necessitatibus.</div>
+    </div>
+    <div class="box">
+        <div class="p2"></div>
+        <div class="h2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sapiente error. Itaque
+            voluptatum dolorum quasi, ex possimus, quo, ratione accusamus numquam quis quidem est temporibus. Eaque
+            inventore dolorum qui necessitatibus.</div>
+    </div>
+
+    <div class="box">
+        <div class="p3"></div>
+        <div class="h3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sapiente error. Itaque
+            voluptatum dolorum quasi, ex possimus, quo, ratione accusamus numquam quis quidem est temporibus. Eaque
+            inventore dolorum qui necessitatibus.</div>
+
+    </div>
+
+    <div class="box ">
+        <div class="p4"></div>
+        <div class="h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sapiente error. Itaque
+            voluptatum dolorum quasi, ex possimus, quo, ratione accusamus numquam quis quidem est temporibus. Eaque
+            inventore dolorum qui necessitatibus.</div>
+
+
+    </div>
+
+</body>
+
+</html>
